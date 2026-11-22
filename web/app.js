@@ -77,7 +77,7 @@ function pintarMensaje(rol, texto, extra = {}) {
   if (extra.needsConfirmation) {
     const b = el("div", "banner")
     b.appendChild(el("span", null, "⚠ Requiere tu confirmación"))
-    const si = el("button", "si", "Sí, confirmo"); si.type = "button"; si.onclick = () => enviarTexto("Sí, envía")
+    const si = el("button", "si", "Sí, realiza el envío simulado"); si.type = "button"; si.onclick = () => enviarTexto("Sí, realiza el envío simulado")
     const no = el("button", null, "No, esperar"); no.type = "button"; no.onclick = () => enviarTexto("No, todavía no")
     b.append(si, no)
     m.appendChild(b)
