@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro como Proveedor · Agente</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Registro como Proveedor</h1>
+      <p class="sub">Prepara formularios y paquetes para firma</p>
+    </div>
+    <div class="meta">
+      <span id="modelo" class="chip">conectando…</span>
+      <button id="nueva" type="button">Nueva sesión</button>
+    </div>
+  </header>
+  <main id="chat" aria-live="polite"></main>
+  <div id="pensando" class="pensando" hidden>El agente está pensando<span>.</span><span>.</span><span>.</span></div>
+  <footer>
+    <form id="form">
+      <textarea id="entrada" rows="2" maxlength="2000" placeholder="Escribe aquí…"></textarea>
+      <button id="enviar" type="submit">Enviar</button>
+    </form>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>
